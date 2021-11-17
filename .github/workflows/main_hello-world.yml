@@ -67,5 +67,18 @@ jobs:
 
       - name: Algo na tela
         run: echo Testando
+        
+  job4:
+    runs-on: macos-latest
+    needs: [joblinux,job3]
+  
+    steps:
+        
+      - name: Repository Checkout
+        uses: actions/checkout@v2
+
+      - name: Algo na tela
+        run: echo Testando no Mac
+
 
  
