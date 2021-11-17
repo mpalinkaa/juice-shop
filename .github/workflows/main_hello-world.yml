@@ -40,7 +40,7 @@ jobs:
 
   jobwindows:
     runs-on: windows-latest
-
+    needs: joblinux
     steps:
         
       - name: Repository Checkout
