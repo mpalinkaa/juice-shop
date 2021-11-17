@@ -55,3 +55,17 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  job3:
+    runs-on: ubuntu-latest
+    needs: [joblinux,jobwindows]
+  
+    steps:
+        
+      - name: Repository Checkout
+        uses: actions/checkout@v2
+
+      - name: Algo na tela
+        run: echo Testando
+
+ 
